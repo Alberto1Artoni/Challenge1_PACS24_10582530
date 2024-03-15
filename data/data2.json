@@ -1,0 +1,15 @@
+{
+  "starting_coor": {
+    "x1_0": 0,
+    "x2_0": 0
+  },
+  "tolerances": {
+    "eps_s": 1e-06,
+    "eps_r": 1e-06
+  },
+  "method": {
+    "MaxIter": 1000,
+    "alpha_0": 0.5,
+    "mu": 0.3
+  }
+}

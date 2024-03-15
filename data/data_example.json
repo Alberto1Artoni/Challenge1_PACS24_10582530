@@ -1,0 +1,19 @@
+{
+  "functions":{
+    "N_variables": 2,
+    "fun": "x1*x2 +4*x1^4 + x2^2 + 3*x1 ",
+    "dfun": ["x2 +12*x1^3 +x2^2 +3 ","x1 + 4*x1^4 + 2*x2 + 3*x1"]
+  },
+  "starting_coor": {
+    "x_0": [0, 0]
+  },
+  "tolerances": {
+    "eps_s": 1e-07,
+    "eps_r": 1e-07
+  },
+  "method": {
+    "MaxIter": 1000,
+    "alpha_0": 0.5,
+    "mu": 0.3
+  }
+}
