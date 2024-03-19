@@ -5,20 +5,15 @@
 class MuparserFun
 {
 public:
-  MuparserFun(const MuparserFun &m)
-    : m_parser(m.m_parser)
-  {
-    m_parser.DefineVar("x1", &m_var1);
-    m_parser.DefineVar("x2", &m_var2);
-  };
 
-  MuparserFun(const std::string &s)
+  MuparserFun(const std::string &s):
+    m_expression(s)
   {
     try
       {
         m_parser.DefineVar("x1", &m_var1);
         m_parser.DefineVar("x2", &m_var2);
-        m_parser.SetExpr(s);
+        m_parser.SetExpr(m_expression);
       }
     catch (mu::Parser::exception_type &e)
       {
@@ -26,8 +21,7 @@ public:
       }
   };
 
-  double
-  operator()(const double &x1, const double &x2)
+  double operator()(const double &x1, const double &x2)
   {
     m_var1 = x1;
     m_var2 = x2;
@@ -36,6 +30,7 @@ public:
   };
 
 private:
+  std::string m_expression;
   double     m_var1, m_var2;
   mu::Parser m_parser;
 };

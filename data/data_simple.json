@@ -1,11 +1,11 @@
 {
   "functions":{
     "N_variables": 2,
-    "fun": "x1*x2 + x2^2 + 4*x1^4 + 3*x1",
-    "dfun": ["x2 + 16*x1^3 + 3" , "x1 + 2*x2"]
+    "fun": "x1^2 + x2^2",
+    "dfun": ["2*x1 " , "2*x2"]
   },
   "starting_coor": {
-    "x_0": [0, 0]
+    "x_0": [1, 1]
   },
   "tolerances": {
     "eps_s": 1e-06,
@@ -13,7 +13,7 @@
   },
   "method": {
     "MaxIter": 1000,
-    "alpha_0": 0.05,
+    "alpha_0": 0.5,
     "mu": 0.2
   }
 }

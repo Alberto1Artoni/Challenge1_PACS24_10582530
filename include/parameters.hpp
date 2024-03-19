@@ -16,11 +16,11 @@ struct parameters
     // function
     std::string fun="x1x2 + 4x1^4 + x2^2 + 3x1";
     //derivative
-    std::array<std::string,2> dfun{"x2 +12x1^3 +x2^2 +3", "x1 + 4x1^4 + 2x2 + 3x1"};
+    std::vector<std::string> dfun{"x2 +12x1^3 +x2^2 +3", "x1 + 4x1^4 + 2x2 + 3x1"};
     // Starting point
     std::vector<double> starting_point{0.0,0.0};
     // Maximum number of iterations
-    int MaxIter{1000};
+    unsigned int MaxIter{1000};
     // Tolerance to control the step lenght
     double eps_s{1e-6};
     // Tolerance to control the residual
