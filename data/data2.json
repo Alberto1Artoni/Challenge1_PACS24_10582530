@@ -1,6 +1,6 @@
 {
   "starting_coor": {
-    "x_0": [0, 0]
+    "x_0": [0.0, 0.0]
   },
   "tolerances": {
     "eps_s": 1e-06,

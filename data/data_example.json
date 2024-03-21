@@ -1,16 +1,16 @@
 {
   "starting_coor": {
-    "x_0": [0, 0]
+    "x_0": [0.0, 0.0]
   },
   "tolerances": {
-    "eps_s": 1e-06,
-    "eps_r": 1e-06
+    "eps_s": 1e-08,
+    "eps_r": 1e-08
   },
   "method": {
     "Strategy": "ARMIYO",
     "MaxIter": 1000,
-    "alpha_0": 0.05,
+    "alpha_0": 0.5,
     "mu": 0.2,
-    "sigma": 0.5
+    "sigma": 0.005
   }
 }

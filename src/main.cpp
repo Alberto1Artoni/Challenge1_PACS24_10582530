@@ -28,9 +28,9 @@ double dfun2(double x1, double x2)
 void printHelp()
 {
   std::cout
-    << "USAGE: main [-h] -f parameterFile (default: data_example.json)"
+    << "USAGE: main [--file] -f location/parameterFile.json (default: data_example.json)"
     << std::endl;
-  std::cout << "-h this help" << std::endl;
+  std::cout << "[--help] -h this help" << std::endl;
   
 }
 
@@ -76,8 +76,8 @@ int main(int argc, char** argv)
   std::cout<<"Solution found is: "<<std::endl;
   std::cout<<"x1 = "<<solver.Get_Result()[0]<<std::endl;
   std::cout<<"x2 = "<<solver.Get_Result()[1]<<std::endl;
-  std::cout<<"Number of iterations= "<<solver.Get_Iter();
-  std::cout<<" Residue= "<<solver.Get_Residual()<<std::endl;
+  std::cout<<"Number of iterations= "<<solver.Get_Iter()<<std::endl;
+  std::cout<<"Residue= "<<solver.Get_Residual()<<std::endl;
   return 0;
 
 

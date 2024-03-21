@@ -19,3 +19,4 @@ $(EXEC): $(OBJS)
 
 clean:
 	$(RM) *.o
+	$(RM) $(EXEC)
