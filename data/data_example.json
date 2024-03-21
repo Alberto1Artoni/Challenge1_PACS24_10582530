@@ -1,9 +1,4 @@
 {
-  "functions":{
-    "N_variables": 2,
-    "fun": "x1*x2 + x2^2 + 4*x1^4 + 3*x1",
-    "dfun": ["x2 + 16*x1^3 + 3" , "x1 + 2*x2"]
-  },
   "starting_coor": {
     "x_0": [0, 0]
   },
@@ -12,8 +7,10 @@
     "eps_r": 1e-06
   },
   "method": {
+    "Strategy": "ARMIYO",
     "MaxIter": 1000,
     "alpha_0": 0.05,
-    "mu": 0.2
+    "mu": 0.2,
+    "sigma": 0.5
   }
 }

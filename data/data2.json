@@ -1,15 +1,16 @@
 {
   "starting_coor": {
-    "x1_0": 0,
-    "x2_0": 0
+    "x_0": [0, 0]
   },
   "tolerances": {
     "eps_s": 1e-06,
     "eps_r": 1e-06
   },
   "method": {
+    "Strategy": "EXPONENTIAL",
     "MaxIter": 1000,
-    "alpha_0": 0.5,
-    "mu": 0.3
+    "alpha_0": 0.05,
+    "mu": 0.2,
+    "sigma": 0.005
   }
 }

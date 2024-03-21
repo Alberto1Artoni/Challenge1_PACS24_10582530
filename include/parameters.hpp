@@ -8,15 +8,6 @@
 //define the structure that containt the input
 struct parameters
 {
-    //*******************************************************//
-    //voglio rendere la dimensione del problema un parametro?//                                                        
-    //*******************************************************//
-    //dimensionality of the problem
-    int dim{2};
-    // function
-    std::string fun="x1x2 + 4x1^4 + x2^2 + 3x1";
-    //derivative
-    std::vector<std::string> dfun{"x2 +12x1^3 +x2^2 +3", "x1 + 4x1^4 + 2x2 + 3x1"};
     // Starting point
     std::vector<double> starting_point{0.0,0.0};
     // Maximum number of iterations
@@ -29,6 +20,10 @@ struct parameters
     double alpha_0{1};
     // Mu (for Exponential and Inverse Decay strategies)
     double mu{0.2};
+    // Sigma for Armyo rule
+    double sigma{0.5};
+    // Strategy for searching alpha
+    std::string strategy{"ARMIJO"};
 };
 //! Prints parameters
 std::ostream &operator<<(std::ostream &, const parameters &);
