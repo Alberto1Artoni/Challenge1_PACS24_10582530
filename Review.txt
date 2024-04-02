@@ -1,0 +1,28 @@
+
+The Makefile is usually up ubove the whole code structure. Something like:
+
+README.md
+Makefile
+- include
+- src
+...
+
+README.md file could have been written a bit better.
+  Divide the section better
+  Highlight code blocks
+  
+  Usually a README.md has the following structure:
+    - configuration (ie, which variables in the Makefile to change)
+    - build (ie, compilation)
+    - execution (show how to run a test)
+
+Markdown should be helpfull in writing fancy READMEs
+
+
+Code comments:
+Personally, I don't like the usage of breaks
+Recall that the std::pow method is very slow for integer powers. Overload the opearator or write directly the function
+Why the maximum number of iterations m_n_max_it been divided by 10 in the for loop for solveArmijo?
+
+
+
